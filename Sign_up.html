@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title> 
+    <style>
+      
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://images.unsplash.com/photo-1517457373958-b7bdd4587205?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+.wrapper{
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(9px);
+    color: #fff;
+    border-radius: 12px;
+    padding: 30px 40px;
+  }
+  .wrapper h1{
+    font-size: 36px;
+    text-align: center;
+  }
+  .wrapper .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    
+    margin: 30px 0;
+  }
+  .input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+  }
+  .input-box input::placeholder{
+    color: #fff;
+  }
+  .input-box i{
+    position: absolute;
+    right: 20px;
+    top: 30%;
+    transform: translate(-50%);
+    font-size: 20px;
+  
+  }
+form .policy{
+  display: flex;
+  align-items: center;
+}
+form h3{
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.wrapper .btn{
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+  }
+    </style>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+   </head>
+<body>
+  <div class="wrapper">
+    <h2 style="font-style: oblique; text-align: center; font-weight: 600;">Sign Up</h2>
+    <form id='signupForm' action="">
+
+      <div class="input-box">
+        <input id="name" type="text" placeholder="Enter your name" required>
+        <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+        <input id="mail" type="text" placeholder="Enter your email" required>
+      </div>
+      <div class="input-box">
+        <input id="password" type="password" placeholder="Create password" required>
+      </div>
+      <div class="input-box">
+        <input id="confpass" type="password" placeholder="Confirm password" required>
+        <i class='bx bxs-lock-alt' ></i>
+      </div>
+      <div class="input-box">
+        <label for="Confirmation" style="font-style: oblique; color: aliceblue; font-weight: bold;">Who Are You?  </label>
+            <select id="ooa" name="eventType" required>
+                <option value="Organiser">Organiser</option>
+                <option value="Attendee">Attendee</option>
+            </select>
+     </div> 
+      <div class="policy">
+        <input type="checkbox" required>
+        <h3 style="font-style: oblique; color: aliceblue; font-weight: bold;">I accept all terms & condition</h3>
+      </div><br>
+      <button id="submit" type="submit" class="btn">Login</button>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+  <script src="./index.js"></script>
+
+</body>
+</html>

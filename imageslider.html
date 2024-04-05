@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>Activities</title>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-image: url(https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: 600px;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+
+.container .slide .item{
+    width:200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow: 0 1px 20px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0,0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slide .item:nth-child(3){
+    left: 50%;
+}
+
+.slide .item:nth-child(4){
+    left: calc(50% + 220px);
+}
+
+.slide .item:nth-child(5){
+    left: calc(50% + 440px);
+}
+
+.slide .item:nth-child(n + 6){
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+
+
+.item .content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #eee;
+    transform:translate(0,-50%);
+    font-family: system-ui;
+    display: none;
+ }
+
+ .slide .item:nth-child(2) .content{
+    display:block;
+ }
+
+ .content .name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+ }
+
+ .content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 0.3s forwards;
+ }
+
+@keyframes animate{
+    from{
+        opacity: 0;
+        transform: translate(0,100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+
+}
+h1{
+    font-family: system-ui;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 4px;
+}
+    </style>
+
+
+</head>
+<body>
+    <h1 style="padding: 20px;">Activities</h1>
+    <div class="container">
+
+        <div class="slide">
+
+            <div class="item" style="background-image: url(https://www.hindustantimes.com/ht-img/img/2023/08/29/550x309/pexels_1693295846485_1693295853881.jpg);">
+                <div class="content">
+                    <div class="name">Sports Events</div>
+                    <div class="des">Athletic events are a great way for people to exhibit their skill and have some competitive fun with their peers. 
+                        This can also be a great way to increase camaraderie among people, as they cheer each other on while they compete in their favorite sports. 
+                        These events provide an opportunity to bring together people of different backgrounds, and develop positive relationships through the power of sports. 
+                        They also give everyone an opportunity to come out and engage in friendly competition, regardless of whether or not they are involved in other things.
+                        With spirited competition set in an uplifting atmosphere cultivated by events, everyone can enjoy themselves, regardless if they are competing or cheering!
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://images.pexels.com/photos/1061640/pexels-photo-1061640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+                <div class="content">
+                    <div class="name">Camping Event</div>
+                    <div class="des">A camping trip is a great way to bond with friends while embarking on a unique and memorable adventure! Going camping requires the members of the community to collaborate, be creative, and think outside the box in order to make the most of their time together.
+                        From figuring out how to light a campfire, to cooking over an open flame, camping encourages people to take risks and push themselves to experience something new. Plus, better yet: you get to witness nature up close as you explore fields and hills filled with lush forests.
+                        A camping trip is a special way for people to help themselves out of their house to build unity and enthusiasm amongst each other
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://images.pexels.com/photos/1652361/pexels-photo-1652361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);">
+                <div class="content">
+                    <div class="name">Talent Show</div>
+                    <div class="des">Talent shows are an excellent way to bring together people with diverse interests and open up the possibilities of fun events in your area.
+                        By combining music, comedy, dance, acrobatics and more, a talent show gives the audience a chance to be entertained while also supporting the performers' skills and creating opportunities for networking with potential peers.
+                        It is also a great platform to introduce projects or businesses that people are starting in their free time. Plus, it is a wonderful opportunity for everyone to get creative in how they display their talents. Ultimately, talent shows provide something unique for an institutional environment and can become an amazing part of any event!
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://media.post.rvohealth.io/wp-content/uploads/sites/4/2022/03/young-couple-dancing-outdoors-dusk-1296x728-header-1024x575.jpg);">
+                <div class="content">
+                    <div class="name">Speed Dating</div>
+                    <div class="des">Speed dating events offer a fast-paced and efficient way for individuals to meet a variety of potential romantic interests in a single session. 
+                        By engaging in quick, structured conversations, participants can quickly gauge compatibility and chemistry, 
+                        helping them to identify potential matches more efficiently than traditional dating methods.
+                         These events provide a platform for people to step out of their comfort zones, expand their social circles, and potentially find meaningful connections or even love in a fun and supportive environment.
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29uY2VydHxlbnwwfHwwfHx8MA%3D%3D);">
+                <div class="content">
+                    <div class="name">Concert</div>
+                    <div class="des">Concerts for people provide exciting opportunities for entertainment, cultural enrichment, and community building. 
+                        These events showcase diverse musical genres and often feature popular or emerging artists. People can enjoy live performances on campus or attend concerts in nearby venues. 
+                        Concerts contribute to a vibrant life, fostering a sense of unity and shared experiences among people. 
+                        Additionally, organizations, or external promoters frequently organize these events to enhance the overall experience.
+                    </div>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(https://www.rathoreuniversity.com/wp-content/uploads/2023/01/10-1.jpg);">
+                <div class="content">
+                    <div class="name">Fashion Show</div>
+                    <div class="des">Fashion shows spotlight creative designs by aspiring designers and models. 
+                        Organized by groups or other institutions, these events offer valuable experience in event planning and runway presentation. 
+                        They contribute to culture, showcasing diverse styles and fostering a sense of community engagement.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </div>
+
+    <script>
+        let next = document.querySelector('.next')
+        let prev = document.querySelector('.prev')
+
+        next.addEventListener('click',function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+        })
+
+        prev.addEventListener('click',function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(items[items.length - 1])
+        })
+    </script>
+</body>
+</html>

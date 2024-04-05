@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us</title>
+
+	<!-- font Awesome CDN link -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+	<!-- External CSS -->
+	
+	<!--<link rel="stylesheet" href="contact.css">-->
+
+	<!-- JQuery CDN link -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+	<style>
+#contact
+{
+	padding: 8vw;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+#contact .getin
+{
+	width: 350px;
+}
+
+#contact .getin h2
+{
+	color: black;
+	font-size: 30px;
+	font-weight: 800;
+	line-height: .8;
+	margin-bottom: 16px;
+}
+
+#contact .getin p
+{
+	color: #686875;
+	line-height: 24px;
+	margin-bottom: 33px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #e5e4ed;
+}
+
+#contact .getin h3
+{
+	color: black;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 26px;
+	margin-bottom: 15px;
+}
+
+#contact .getin .getin-details div
+{
+	display: flex;
+}
+
+#contact .getin .getin-details div .get
+{
+	font-size: 16px;
+	line-height: 22px;
+	color: black;
+	margin-right: 20px;
+}
+
+#contact .getin .getin-details div p
+{
+	font-size: 14px;
+	border-bottom: none;
+	line-height: 22px;
+	margin-bottom: 15px;
+}
+
+#contact .getin .getin-details .pro-links i
+{
+	margin-right: 8px;
+}
+
+#contact .form
+{
+	width: 60%;
+	background: #f7f6fa;
+	padding: 40px;
+	border-radius: 10px;
+}
+
+#contact .form h4
+{
+	font-size: 24px;
+	color: black;
+	line-height: 30px;
+	margin-bottom: 8px;
+}
+
+#contact .form p
+{
+	color: #686875;
+	line-height: 24px;
+	padding-bottom: 25px;
+}
+
+#contact .form .form-row
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+#contact .form .form-row input
+{
+	width: 48%;
+	font-size: 14px;
+	font-weight: 400;
+	border-radius: 3px;
+	border: none;
+	background: #fff;
+	color: #7e7c87;
+	outline: none;
+	padding: 20px 30px;
+	margin-bottom: 20px;
+}
+
+#contact .form .form-col input,
+#contact .form .form-col textarea
+{
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	border-radius: 3px;
+	border: none;
+	background: #fff;
+	color: #7e7c87;
+	outline: none;
+	padding: 20px 30px;
+	margin-bottom: 20px;
+}
+
+
+#contact .form button
+{
+	font-size: .9rem;
+	padding: 13px 25px;
+	background: black;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	font-weight: 600;
+	cursor: pointer;
+	color: #fff;
+}
+
+
+@media screen and (max-width: 769px)
+{
+	#contact
+	{
+		padding: 8vw 4vw;
+	}
+
+	#contact .getin
+	{
+		width: 250px;
+	}
+}
+
+
+@media screen and (max-width: 475px)
+{
+	#contact
+	{
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+	}
+
+	#contact .getin
+	{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	#contact .form
+	{
+		width: 100%;
+		padding: 40px 30px;
+	}
+
+	#contact .form .form-row
+	{
+		flex-direction: column;
+	}
+
+	#contact .form .form-row input
+	{
+		width: 100%;
+	}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body,html{
+    overflow-x: hidden;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    background-color: black;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block ;
+    margin-left: 20px;
+}
+
+nav .logo {
+    width: 80px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;;
+    margin: 10px 20px;
+    position: relative;
+}
+nav ul li a::after {
+    content: '';
+    width:0;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+	</style>
+
+
+</head>
+<body>
+
+	<div>
+	<nav class="navbar">
+        <img src="https://drive.google.com/uc?export=view&id=1Jd4Vl13tMRJ2-wui7h3A2HkvmZkFk92B" class="logo">
+        <ul>
+            <li><a href="event.html">Home</a></li>
+            <li><a href="event.html">Trendings</a></li>
+            <li><a href="event.html">Gallery</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html" target="_blank">Login/Sign Up</a></li>
+       </ul>
+    </nav>
+	</div>
+
+	<section id="contact">
+		<div class="getin">
+			<h2>Get in touch</h2>
+			<p>Looking for help? Fill the form and start a new adventure.</p>
+
+			<div class="getin-details">
+				<h3>Headquaters</h3>
+				<div>
+					<i class="fa-solid fa-map get"></i>
+					<p>Mumbai, India</p>
+				</div>
+
+				<h3>Phone</h3>
+				<div>
+					<i class="fas fa-phone-alt get"></i>
+					<p>(+91) 9199631795 <br> (+91) 8080313117</p>
+				</div>
+
+				<h3>Support</h3>
+				<div>
+					<i class="fa-solid fa-envelope get"></i>
+					<p>eventelevate.com <br> eventelevate@gmail.com.com </p>
+				</div>
+
+				<h3>Follow Us</h3>
+				<div class="pro-links">
+					<i class="fab fa-facebook"></i>
+					<i class="fab fa-instagram"></i>
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+			</div>
+		</div>
+
+		<div class="form">
+			<h4>Let's Connect</h4>
+			<div class="form-row">
+				<input type="text" placeholder="Your Name">
+				<input type="email" placeholder="Your Email">
+			</div>
+			<div class="form-col">
+				<input type="text" placeholder="Subject line...">
+			</div>
+			<div class="form-col">
+				<textarea name="" id="" cols="30" rows="8" placeholder="How can we help?"></textarea>
+			</div>
+
+			<div class="form-col">
+				<button>Send Message</button>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- Footer section starts from here -->
+
+	<footer>
+        <p>&copy; 2024 EventElevate by TEAM NINJA. All rights reserved.</p>
+    </footer>
+	<!-- Footer section ends from here -->
+
+	<script>
+		// Show menu links on burger click
+		$('#menu-btn').click(function(){
+			$('nav .navigation ul').addClass('active')
+		});
+
+		// Hide navbar on click function
+		$('#menu-close').click(function(){
+			$('nav .navigation ul').removeClass('active')
+		});
+	</script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+</body>
+</html>
